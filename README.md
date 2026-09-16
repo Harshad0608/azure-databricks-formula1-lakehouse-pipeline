@@ -84,14 +84,34 @@ Setup:
 
 Formula 1 data sourced from the jolpica/jolpica-f1 GitHub repository (https://github.com/jolpica/jolpica-f1).
 
+- Open-source API using the relational-style Ergast format
+- Released under the Apache 2.0 license, permitting educational use
+- Provided in multiple file formats for learning purposes:
+
+| Dataset | Format |
+|---|---|
+| Circuits | CSV |
+| Races | CSV |
+| Constructors | Single-line JSON |
+| Drivers | Single-line nested JSON |
+| Results | Single-line JSON (multiple files) |
+| Sprints | Multi-line JSON (multiple files) |
+
 ## Dashboard
 
-A Databricks dashboard built on top of the Gold layer tables, including driver championship standings, a win-distribution breakdown by driver, and total points scored per driver across the season.
+A Databricks dashboard built on top of the Gold layer tables, including driver championship standings, a win-distribution breakdown by driver, total points scored per driver, constructor championship standings, and a historical look at the most dominant drivers and teams of all time.
 
-![driver-standings-dashboard](images/dashboard1.png)
-![constructors-standings-dashboard](images/dashboard2.png)
-![dominant-drivers-dashboard](images/dashboard3.png)
-![dominant-constructors-dashboard](images/dashboard4.png)
+### Driver Standings
+![Driver Championship Dashboard](images/dashboard1.png)
+
+### Constructor Standings
+![Constructor Championship Dashboard](images/dashboard2.png)
+
+### Dominant Drivers of All Time
+![Dominant Drivers Dashboard](images/dashboard3.png)
+
+### Dominant Teams of All Time
+![Dominant Teams Dashboard](images/dashboard4.png)
 
 ## What This Project Demonstrates
 
@@ -105,6 +125,6 @@ A Databricks dashboard built on top of the Gold layer tables, including driver c
 ## Author
 
 Harshad
-Aspiring Data Engineer, Databricks Certified Data Engineer Associate (DP-750)
+Aspiring Data Engineer, Microsoft Certified Databricks Data Engineer Associate (DP-750)
 
 Feel free to connect or reach out with feedback.
